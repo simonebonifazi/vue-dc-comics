@@ -66,6 +66,8 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+
+  cursor: pointer;
 }
 
 .d-flex {
