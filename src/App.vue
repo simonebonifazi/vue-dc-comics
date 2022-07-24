@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <MyLayout />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyLayout from './components/MyLayout.vue'
 
 export default {
   name: 'dc-comics',
   components: {
-    HelloWorld
+    MyLayout
   }
 }
 </script>
 
 <style lang="scss">
+//Reset
+* {
+  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
+}
+
+//Generics
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
 }
 </style>
