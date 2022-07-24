@@ -58,5 +58,7 @@ li {
 
 img {
   padding: 15px 0;
+
+  width: 80px
 }
 </style>
