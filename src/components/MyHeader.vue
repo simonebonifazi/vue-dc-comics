@@ -53,6 +53,10 @@ li {
 
   padding: 10px;
 
-  border: 1px dashed black;
+  font-size: 12px;
+}
+
+img {
+  padding-bottom: 15px;
 }
 </style>

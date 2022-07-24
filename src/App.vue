@@ -25,17 +25,6 @@ export default {
 </script>
 
 <style lang="scss">
-//layout
-div {
-  border: 2px dashed blue;
-  min-height: 80px;
-}
-
-section {
-  border: 2px solid green;
-  min-height: 250px;
-}
-
 //Reset
 * {
   margin: 0;
@@ -74,7 +63,7 @@ a {
   display: flex;
 }
 
-.bg {
+body {
   background-color: #1c1c1c;
 }
 </style>
