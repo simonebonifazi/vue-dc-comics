@@ -1,6 +1,15 @@
 <template>
-  <div id="app">
+  <div class="container">
     <MyHeader />
+    <section id="main">
+
+    </section>
+    <section id="footer-top">
+
+    </section>
+    <section id="footer-bottom">
+
+    </section>
   </div>
 </template>
 
@@ -35,9 +44,15 @@ section {
 }
 
 //Generics
-#app {
+body {
   font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
 }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 
 img {
   height: auto;
@@ -46,5 +61,9 @@ img {
 
 ul {
   list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
 }
 </style>
