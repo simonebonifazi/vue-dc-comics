@@ -8,17 +8,9 @@
       </figure>
 
       <ul class="d-flex">
-        <li v-for="link in links" :key="link" :class="{ 'active': link.current }"> <a :href="link.url"> {{ link.text
+        <li v-for="link in links" :key="link.text" :class="{ 'active': link.current }"> <a :href="link.url"> {{
+            link.text
         }}</a></li>
-        <!-- <li class="active"> <a href="#"> COMICS</a></li>
-        <li> <a href="#"> MOVIES</a></li>
-        <li> <a href="#"> TV</a></li>
-        <li> <a href="#"> GAMES</a></li>
-        <li> <a href="#"> COLLECTIBLES</a></li>
-        <li> <a href="#"> VIDEOS</a></li>
-        <li> <a href="#"> FANS</a></li>
-        <li> <a href="#"> NEWS</a></li>
-        <li> <a href="#"> SHOP</a></li> -->
       </ul>
 
     </div>
