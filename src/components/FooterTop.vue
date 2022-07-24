@@ -12,11 +12,9 @@
                         <li>Games</li>
                         <li>Videos</li>
                         <li>News</li>
-                    </ul>
-                </li>
-                <li class="shop">
-                    <h3>SHOP</h3>
-                    <ul>
+                        <li class="shop">
+                            <h3>SHOP</h3>
+                        </li>
                         <li>Shop DC</li>
                         <li>Shop DC Collectibles</li>
                     </ul>
@@ -72,14 +70,18 @@ export default {
     height: 100%;
 
     justify-content: space-between;
+    align-items: center;
 }
 
 #big-logo {
-    height: 80%;
+    height: 70%;
 }
 
-#main-links {
+#main-links,
+#main-links .shop {
     color: #fff;
+    font-size: 16px;
+
 }
 
 h3 {
@@ -91,5 +93,12 @@ h3 {
 .shop li,
 .sites li {
     font-size: 12px;
+    margin-top: 2px;
+    color: #646464
+}
+
+.sites,
+.dc {
+    margin-left: 32px;
 }
 </style>
