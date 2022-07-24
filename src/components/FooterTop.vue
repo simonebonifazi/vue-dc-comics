@@ -180,38 +180,40 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .footer-top {
     background-image: url(../assets/img/footer-bg.jpg);
 
     height: 320px;
+
+    .dc-big-logo {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-image: url(../assets/img/dc-logo-bg.png);
+    }
+
+    .container {
+        height: 100%;
+
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.dc-big-logo {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-image: url(../assets/img/dc-logo-bg.png);
-}
 
-.container {
-    height: 100%;
-
-    justify-content: space-between;
-    align-items: center;
-}
 
 #main-links,
 #main-links .shop {
     color: #fff;
     font-size: 16px;
 
+    h3 {
+        margin: 5px 0;
+    }
 }
 
-h3 {
-    margin: 5px 0;
-}
 
 .dc-comics li,
 .dc li,
