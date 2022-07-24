@@ -5,13 +5,9 @@
                 <li class="dc-comics">
                     <h3> DC-COMICS</h3>
                     <ul>
-                        <li> <a href="#"> Characters </a></li>
-                        <li> <a href="#"> Comics </a></li>
-                        <li> <a href="#"> Movies </a></li>
-                        <li> <a href="#"> TV </a></li>
-                        <li> <a href="#"> Games </a></li>
-                        <li> <a href="#"> Videos </a></li>
-                        <li> <a href="#"> News </a></li>
+                        <li v-for="link in links" :key="link.text"> <a :href="link.url"> {{
+                                link.text
+                        }}</a></li>
                         <li class="shop">
                             <h3>SHOP</h3>
                         </li>
@@ -22,32 +18,22 @@
                 <li class="dc">
                     <h3>DC</h3>
                     <ul>
-                        <li> <a href="#"> Terms Of Use </a></li>
-                        <li> <a href="#"> Privacy policy (New) </a></li>
-                        <li> <a href="#"> Ad Choices </a></li>
-                        <li> <a href="#"> Advertising </a></li>
-                        <li> <a href="#"> Jobs </a></li>
-                        <li> <a href="#"> Subscription </a></li>
-                        <li> <a href="#"> Talent Workshop </a></li>
-                        <li> <a href="#"> CPSC Certificates </a></li>
-                        <li> <a href="#"> Ratings </a></li>
-                        <li> <a href="#"> Shop Help </a></li>
-                        <li> <a href="#"> Contact Us </a></li>
+                        <li v-for="link in dcLinks" :key="link.text"> <a :href="link.url"> {{
+                                link.text
+                        }}</a></li>
                     </ul>
                 </li>
                 <li class="sites">
                     <h3>SITES</h3>
                     <ul>
-                        <li> <a href="#"> DC </a></li>
-                        <li> <a href="#"> MAD Magazine </a></li>
-                        <li> <a href="#"> DC Kids </a></li>
-                        <li> <a href="#"> DC Universe </a></li>
-                        <li> <a href="#"> DC Power Visa </a></li>
+                        <li v-for="link in sitesLinks" :key="link.text"> <a :href="link.url"> {{
+                                link.text
+                        }}</a></li>
+
                     </ul>
                 </li>
             </ul>
             <div class="dc-big-logo">
-                <!-- <img id="big-logo" src="../assets/img/dc-logo-bg.png" alt="logo-big"> -->
             </div>
         </div>
     </div>
@@ -55,7 +41,126 @@
 
 <script>
 export default {
-    name: "FooterTop"
+    name: "FooterTop",
+    data() {
+        return {
+            links: [
+                {
+                    text: 'Characters',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Comics',
+                    url: '#',
+                    current: true,
+                },
+                {
+                    text: 'Movies',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Games',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Collectibles',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Videos',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Fans',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'News',
+                    url: '#',
+                    current: false,
+                },
+            ],
+            dcLinks: [
+                {
+                    text: 'Terms Of Use',
+                    url: '#',
+                },
+                {
+                    text: 'Privacy policy (New)',
+                    url: '#',
+                },
+                {
+                    text: 'Ad Choices',
+                    url: '#',
+                },
+                {
+                    text: 'Advertising',
+                    url: '#',
+                },
+                {
+                    text: 'Jobs',
+                    url: '#',
+                },
+                {
+                    text: 'Subscription',
+                    url: '#',
+                },
+                {
+                    text: 'Talent Workshop',
+                    url: '#',
+                },
+                {
+                    text: 'CPSC Certificates',
+                    url: '#',
+                },
+                {
+                    text: 'Ratings',
+                    url: '#',
+                },
+                {
+                    text: 'Shop Help',
+                    url: '#',
+                },
+                {
+                    text: 'Contact Us',
+                    url: '#',
+                },
+            ],
+            sitesLinks: [
+                {
+                    text: 'DC',
+                    url: '#',
+                },
+                {
+                    text: 'MAD Magazine',
+                    url: '#',
+                },
+                {
+                    text: 'DC Kids',
+                    url: '#',
+                },
+                {
+                    text: 'DC Universe',
+                    url: '#',
+                },
+                {
+                    text: 'DC Power Visa',
+                    url: '#',
+                },
+            ]
+        }
+    }
 }
 </script>
 
