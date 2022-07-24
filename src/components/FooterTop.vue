@@ -212,6 +212,7 @@ h3 {
 
 .sites,
 .dc {
-    margin-left: 32px;
+    padding-left: 30px;
+    width: 155px;
 }
 </style>
