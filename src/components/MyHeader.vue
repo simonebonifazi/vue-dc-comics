@@ -84,33 +84,34 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 header {
   background-color: #fff;
   margin-top: 15px;
-}
 
-.container {
-  justify-content: space-between;
-  align-items: center;
-}
+  .container {
+    justify-content: space-between;
+    align-items: center;
 
-.active {
-  border-bottom: 2px solid #0282F9;
-  color: #0282F9;
-}
+    img {
+      padding: 15px 0;
 
-li {
-  height: 35px;
+      width: 80px
+    }
+  }
 
-  padding: 10px;
+  .active {
+    border-bottom: 2px solid #0282F9;
+    color: #0282F9;
+  }
 
-  font-size: 12px;
-}
+  li {
+    height: 35px;
 
-img {
-  padding: 15px 0;
+    padding: 10px;
 
-  width: 80px
+    font-size: 12px;
+  }
+
 }
 </style>
