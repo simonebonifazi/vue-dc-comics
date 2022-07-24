@@ -3,9 +3,7 @@
     <MyHeader />
     <MainContent />
     <FooterTop />
-    <section id="footer-bottom">
-
-    </section>
+    <FooterBottom />
   </div>
 </template>
 
@@ -13,13 +11,15 @@
 import MyHeader from './components/MyHeader.vue'
 import MainContent from './components/MainContent.vue'
 import FooterTop from './components/FooterTop.vue'
+import FooterBottom from './components/FooterBottom.vue'
 
 export default {
   name: 'dc-comics',
   components: {
     MyHeader,
     MainContent,
-    FooterTop
+    FooterTop,
+    FooterBottom
   }
 }
 </script>
