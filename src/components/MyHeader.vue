@@ -1,21 +1,21 @@
 <template>
 
-  <header class="d-flex">
+  <header class="d-flex container">
     <figure>
       <img src="../assets/img/dc-logo.png" alt="dc-logo">
     </figure>
 
     <ul class="d-flex">
-      <li></li>
-      <li class="active"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li> CHARACTERS</li>
+      <li class="active"> COMICS</li>
+      <li>MOVIES</li>
+      <li>TV</li>
+      <li>GAMES</li>
+      <li>COLLECTIBLES</li>
+      <li>VIDEOS</li>
+      <li>FANS</li>
+      <li>NEWS</li>
+      <li>SHOP</li>
     </ul>
 
   </header>

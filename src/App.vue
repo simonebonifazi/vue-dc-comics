@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
+  <div>
     <MyHeader />
-    <section id="main">
-
-    </section>
+    <MainContent />
     <section id="footer-top">
 
     </section>
@@ -15,11 +13,13 @@
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+import MainContent from './components/MainContent.vue'
 
 export default {
   name: 'dc-comics',
   components: {
-    MyHeader
+    MyHeader,
+    MainContent
   }
 }
 </script>
