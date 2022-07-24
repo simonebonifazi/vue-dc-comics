@@ -3,8 +3,10 @@
   <header>
     <div class="container d-flex ">
       <figure>
+        <a href="#">
 
-        <img src="../assets/img/dc-logo.png" alt="dc-logo">
+          <img src="../assets/img/dc-logo.png" alt="dc-logo">
+        </a>
       </figure>
 
       <ul class="d-flex">
