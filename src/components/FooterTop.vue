@@ -46,9 +46,9 @@
                     </ul>
                 </li>
             </ul>
-            <figure>
-                <img id="big-logo" src="../assets/img/dc-logo-bg.png" alt="logo-big">
-            </figure>
+            <div class="dc-big-logo">
+                <!-- <img id="big-logo" src="../assets/img/dc-logo-bg.png" alt="logo-big"> -->
+            </div>
         </div>
     </div>
 </template>
@@ -64,6 +64,14 @@ export default {
     background-image: url(../assets/img/footer-bg.jpg);
 
     height: 320px;
+}
+
+.dc-big-logo {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(../assets/img/dc-logo-bg.png);
 }
 
 .container {
