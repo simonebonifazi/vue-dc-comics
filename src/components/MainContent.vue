@@ -19,7 +19,6 @@ export default {
 <style scoped>
 .bg {
     color: #fff;
-    background-color: #1c1c1c;
 }
 
 .content {

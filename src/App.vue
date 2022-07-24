@@ -1,10 +1,8 @@
 <template>
-  <div>
+  <div class="bg">
     <MyHeader />
     <MainContent />
-    <section id="footer-top">
-
-    </section>
+    <FooterTop />
     <section id="footer-bottom">
 
     </section>
@@ -14,12 +12,14 @@
 <script>
 import MyHeader from './components/MyHeader.vue'
 import MainContent from './components/MainContent.vue'
+import FooterTop from './components/FooterTop.vue'
 
 export default {
   name: 'dc-comics',
   components: {
     MyHeader,
-    MainContent
+    MainContent,
+    FooterTop
   }
 }
 </script>
@@ -63,7 +63,16 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .d-flex {
   display: flex;
+}
+
+.bg {
+  background-color: #1c1c1c;
 }
 </style>
