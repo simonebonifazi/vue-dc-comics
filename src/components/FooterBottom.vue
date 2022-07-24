@@ -7,7 +7,7 @@
             </span>
 
             <div class="social-references d-flex">
-                <ul class="d-flex">
+                <ul class="social-links d-flex">
                     <li>
                         <h3> FOLLOW US </h3>
                     </li>
@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .footer-bottom {
     background-color: #303030;
 }
@@ -37,27 +37,29 @@ export default {
     justify-content: space-between;
     align-items: center;
 
-    padding: 25px;
+    padding: 25px 0;
+
+    span {
+        border: 2px solid #0282F9;
+        padding: 7px;
+
+        color: #fff;
+    }
 }
 
-.container span {
-    border: 2px solid #0282F9;
-    padding: 7px;
-
-    color: #fff;
-}
 
 .social-references,
-.social-references ul {
+.social-links {
     align-items: center;
-}
 
-.social-references ul li {
-    margin: 0 10px;
-}
+    h3 {
+        color: #0282F9;
+    }
 
-.social-references h3 {
-    color: #0282F9;
-
+    ul {
+        li {
+            margin: 0 10px;
+        }
+    }
 }
 </style>
