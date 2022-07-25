@@ -6,9 +6,9 @@
                 <ul class="card-container  d-flex">
                     <li v-for="(card, i) in cards" :key="i" class="card"> 
                         <figure>
-                        <a href="#"> <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="Action Comics"> </a>
+                        <a href="#"> <img :src="card.thumb" :alt="card.series"> </a>
                     </figure>
-                    <figcaption> Action Comics </figcaption>
+                    <figcaption v-text="card.series"></figcaption>
                     </li>
                 </ul>
 
@@ -94,7 +94,7 @@ export default {
             "series": "Catwoman",
             "type": "graphic novel"
         }
-    ] 
+                   ] 
         }
     }
 }
@@ -113,7 +113,8 @@ export default {
     padding: 40px 0;
     .card{
         flex-basis: calc(100% / 6);
-        padding:20px;
+        padding: 10px;
+        height: 200px;
 
         img{
             height: 125px;
