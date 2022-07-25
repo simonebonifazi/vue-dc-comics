@@ -4,12 +4,7 @@
         <div class="container">
 
                 <ul class="card-container  d-flex">
-                    <li v-for="(card, i) in cards" :key="i" class="card"> 
-                        <figure>
-                        <a href="#"> <img :src="card.thumb" :alt="card.series"> </a>
-                    </figure>
-                    <figcaption v-text="card.series"></figcaption>
-                    </li>
+                    <MainCard  v-for="(card, i) in cards" :key="i" :card="card" />
                 </ul>
 
         </div>
@@ -17,8 +12,12 @@
 </template>
 
 <script>
+import MainCard from './MainCard.vue'
 export default {
     name: 'MainContent',
+    components: {
+        MainCard
+    },
     data(){
         return{
             cards: [
@@ -111,17 +110,5 @@ export default {
     flex-wrap: wrap;
 
     padding: 40px 0;
-    .card{
-        flex-basis: calc(100% / 6);
-        padding: 10px;
-        height: 200px;
-
-        img{
-            height: 125px;
-            width: 125px;
-            object-position: top;
-            object-fit: cover;
-        }
-    }
 }
 </style>
