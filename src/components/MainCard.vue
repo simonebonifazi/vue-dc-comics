@@ -11,7 +11,11 @@
 export default {
     name: "MainCard",
     props:{
-        card: Object
+        card: Object,
+        //url: String,
+        //name: String
+        //cambiando qui questi dati, devo cambiare anche nell'img i nomi e 
+        //Soprattutto dovrò bindare nel MainContent url e name, collegandoli (="qui") ai relativi dati che mi servono
     }
     }
 </script>
