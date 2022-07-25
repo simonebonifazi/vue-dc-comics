@@ -11,13 +11,13 @@
                     <li>
                         <h3> FOLLOW US </h3>
                     </li>
-                    <!-- <li v-for="image in images" :key="image.id"> <a :href="image.url"> <img :src="image.src"
-                                :alt="image.alt"></a></li> -->
-                    <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook logo"></a></li>
+                    <li v-for="image in images" :key="image.id"> <a :href="image.url"> <img :src="image.src"
+                                :alt="image.alt"></a></li>
+                    <!-- <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook logo"></a></li>
                     <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter logo"></a></li>
                     <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube logo"></a></li>
                     <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest logo"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope logo"></a></li>
+                    <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope logo"></a></li> -->
                 </ul>
             </div>
         </div>
@@ -33,31 +33,31 @@ export default {
                 {
                     id: 1,
                     url: "#",
-                    src: "../assets/img/footer-facebook.png",
+                    src: require("../assets/img/footer-facebook.png"),
                     alt: "facebook logo"
                 },
                 {
                     id: 2,
                     url: "#",
-                    src: "../assets/img/footer-twitter.png",
+                    src: require("../assets/img/footer-twitter.png"),
                     alt: "twitter logo"
                 },
                 {
                     id: 3,
                     url: "#",
-                    src: "../assets/img/footer-youtube.png",
+                    src: require("../assets/img/footer-youtube.png"),
                     alt: "youtube logo"
                 },
                 {
                     id: 4,
                     url: "#",
-                    src: "../assets/img/footer-pinterest.png",
+                    src: require("../assets/img/footer-pinterest.png"),
                     alt: "pinterest logo"
                 },
                 {
                     id: 5,
                     url: "#",
-                    src: "../assets/img/footer-periscope.png",
+                    src: require("../assets/img/footer-periscope.png"),
                     alt: "periscope logo"
                 },
             ],
