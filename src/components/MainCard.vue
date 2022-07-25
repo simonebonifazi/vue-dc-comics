@@ -6,8 +6,8 @@
 
 <script>
 export default {
-name: "MainCard",
-}
+    name: "MainCard",
+    }
 </script>
 
 <style>
