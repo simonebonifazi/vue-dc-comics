@@ -13,11 +13,7 @@
                     </li>
                     <li v-for="image in images" :key="image.id"> <a :href="image.url"> <img :src="image.src"
                                 :alt="image.alt"></a></li>
-                    <!-- <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook logo"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter logo"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube logo"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest logo"></a></li>
-                    <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope logo"></a></li> -->
+          
                 </ul>
             </div>
         </div>
@@ -27,42 +23,10 @@
 <script>
 export default {
     name: "FooterBottom",
-    data() {
-        return {
-            images: [
-                {
-                    id: 1,
-                    url: "#",
-                    src: require("../assets/img/footer-facebook.png"),
-                    alt: "facebook logo"
-                },
-                {
-                    id: 2,
-                    url: "#",
-                    src: require("../assets/img/footer-twitter.png"),
-                    alt: "twitter logo"
-                },
-                {
-                    id: 3,
-                    url: "#",
-                    src: require("../assets/img/footer-youtube.png"),
-                    alt: "youtube logo"
-                },
-                {
-                    id: 4,
-                    url: "#",
-                    src: require("../assets/img/footer-pinterest.png"),
-                    alt: "pinterest logo"
-                },
-                {
-                    id: 5,
-                    url: "#",
-                    src: require("../assets/img/footer-periscope.png"),
-                    alt: "periscope logo"
-                },
-            ],
-        }
-    },
+   props: {
+    images: Array,
+   }
+    
 }
 </script>
 
